@@ -44,6 +44,7 @@ multi_cols = [c for c in df.columns if c != "salary"]
 multi = run(multi_cols, "Multiple (all features)")
 
 best = max([single, multi], key=lambda t: t[1])
+# Note: model is chosen on test R2; cross-validation would be more reliable.
 joblib.dump({"model": best[0], "features": best[2]}, "salary_model.pkl")
 print("\nBest model saved -> salary_model.pkl  (features:", best[2], ")")
 

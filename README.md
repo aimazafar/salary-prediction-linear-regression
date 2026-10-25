@@ -23,8 +23,8 @@ pip install -r requirements.txt
 python salary_prediction.py
 
 ## Results 
-Single feature (experience): RMSE (RMSE 4,012.35), R2 (0.9871)
-Multiple features: RMSE (add value), R2 (add value)
+Single feature (experience): RMSE 9,175.86, R2 0.7870
+Multiple features: RMSE 4,638.47, R2 0.9456
 
 ## Tech stack
 Python, pandas, NumPy, scikit-learn, joblib
